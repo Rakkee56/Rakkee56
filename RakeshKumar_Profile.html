@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rakesh Kumar - Profile</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 20px;
+            background-color: #232323;
+            color: white;
+        }
+
+        h1 {
+            color: #ff4500;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s; /* Add the zoom-in transition */
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Zoom-in effect on hover */
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #ff4500;
+            font-family: "Pacifico", cursive;
+            font-size: 28px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            background-color: #ff8c00;
+            color: white;
+            font-family: "Verdana", sans-serif;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #ff6347;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-links li {
+            margin-right: 10px;
+        }
+
+        .resume-link {
+            text-align: center;
+        }
+
+        .resume-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .resume-link a:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+        }
+
+        /* Custom styles for unique elements */
+
+        /* Add a custom font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        /* Add a background pattern */
+        body {
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png');
+        }
+
+        /* Add a custom color for h1 */
+        h1 {
+            color: #ff8c00;
+            font-size: 36px;
+        }
+
+        /* Add a unique color for h2 */
+        h2 {
+            color: #ff6347;
+            font-family: "Pacifico", cursive;
+            font-size: 28px;
+        }
+
+        /* Add a subtle animation to the social links */
+        .social-links li a {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links li a:hover {
+            color: #ff8c00;
+            transform: scale(1.1);
+        }
+
+        /* Add a custom font to the resume link */
+        .resume-link a {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+        }
+
+        /* Add a fun animation to the footer contact info */
+        footer p {
+            font-size: 20px;
+            position: relative;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Additional styling for the skills section */
+        .skills {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-item {
+            margin: 5px;
+            padding: 8px 15px;
+            background-color: #ff8c00;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for skills */
+        .skill-item:hover {
+            background-color: #ff6347;
+        }
+
+        /* Additional styling for the interests section */
+        .interests {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .interest-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .interest-item {
+            margin: 5px;
+            padding: 8px 15px;
+            background-color: #ff4500;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for interests */
+        .interest-item:hover {
+            background-color: #ff6347;
+        }
+
+        /* Updated styling for contact details */
+        .contact-details {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            background-color: #ff8c00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rakesh Kumar</h1>
+        <img src="https://imgur.com/gVxWnm1.jpg" alt="Rakesh Kumar">
+    </header>
+    
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Senior Data Engineer with over 4.5 years of experience in SQL, PLSQL, and UNIX, I have a strong foundation in database management and scripting. I am skilled in using Jira, Open Reports, and Jasper Reports for project management and reporting, along with SQL Developer, PLSQL Developer, Putty, WinSCP, and Velocity Application for efficient development and deployment. Additionally, I possess expertise in performance and query tuning, optimizing SQL queries, database parameters, and memory management. My ability to identify and resolve performance bottlenecks ensures optimal application performance.
+        </p>
+    </section>
+	
+    <section>
+        <h2>Social Links</h2>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/rakesh-kumar-s-390325243/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rakkee_56/" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </li>
+        </ul>
+    </section>
+	
+    <section class="resume-link">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my qualifications and experience.</p>
+        <a href="https://1drv.ms/b/s!Aui38iGZJW_vgQk7Ba1ElFzwajNX?e=pX31ny" target="_blank" rel="noopener noreferrer">
+            Download Resume
+        </a>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li class="skill-item">SQL</li>
+            <li class="skill-item">PLSQL</li>
+            <li class="skill-item">UNIX</li>
+            <li class="skill-item">Jasper Reports</li>
+            <li class="skill-item">SQL Developer</li>
+            <li class="skill-item">PLSQL Developer</li>
+            <li class="skill-item">Putty</li>
+            <li class="skill-item">WinSCP</li>
+            <li class="skill-item">Velocity Application</li>
+            <li class="skill-item">Performance Tuning</li>
+            <li class="skill-item">Query Optimization</li>
+        </ul>
+    </section>
+
+    <!-- New Interests Section -->
+    <section class="interests">
+        <h2>Interests</h2>
+        <ul class="interest-list">
+            <li class="interest-item">Data Science</li>
+            <li class="interest-item">Machine Learning</li>
+            <li class="interest-item">Big Data</li>
+            <li class="interest-item">Web Development</li>
+            <li class="interest-item">Artificial Intelligence</li>
+            <li class="interest-item">Travel</li>
+            <li class="interest-item">Photography</li>
+            <li class="interest-item">Fitness</li>
+        </ul>
+    </section>
+
+    <!-- Updated Contact Details Section -->
+    <section class="contact-details">
+        <h2>Contact Details</h2>
+        <p class="contact-info">
+            &#9993; rakkeshkk@gmail.com &nbsp;&nbsp;&nbsp; &#128222; +91 9976883606
+        </p>
+    </section>
+
+  
+</body>
+</html>
